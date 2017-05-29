@@ -10,6 +10,7 @@ var sign_options_schema = Joi.object().keys({
   audience: [Joi.string(), Joi.array()],
   algorithm: Joi.string().valid('RS256', 'RS384', 'RS512', 'ES256', 'ES384', 'ES512', 'HS256', 'HS384', 'HS512', 'none'),
   header: Joi.object(),
+  mutatePayload: Joi.boolean(),
   encoding: Joi.string(),
   issuer: Joi.string(),
   subject: Joi.string(),
@@ -76,7 +77,9 @@ module.exports = function (payload, secretOrPrivateKey, options, callback) {
       return failure(payload_validation_result.error);
     }
 
-    payload = xtend(payload);
+    if (!options.mutatePayload) {
+      payload = xtend(payload);
+    }
   } else {
     var invalid_options = options_for_objects.filter(function (opt) {
       return typeof options[opt] !== 'undefined';
