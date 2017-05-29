@@ -1,5 +1,5 @@
 {
-  "name": "jsonwebtoken",
+  "name": "sc-jsonwebtoken",
   "version": "7.4.1",
   "description": "JSON Web Token implementation (symmetric and asymmetric)",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/auth0/node-jsonwebtoken"
+    "url": "https://github.com/SocketCluster/sc-jsonwebtoken"
   },
   "keywords": [
     "jwt"
@@ -16,7 +16,7 @@
   "author": "auth0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/auth0/node-jsonwebtoken/issues"
+    "url": "https://github.com/SocketCluster/sc-jsonwebtoken/issues"
   },
   "dependencies": {
     "joi": "^6.10.1",

@@ -1,4 +1,4 @@
-# jsonwebtoken
+# sc-jsonwebtoken
 
 [![Build Status](https://secure.travis-ci.org/auth0/node-jsonwebtoken.svg?branch=master)](http://travis-ci.org/auth0/node-jsonwebtoken)[![Dependency Status](https://david-dm.org/auth0/node-jsonwebtoken.svg)](https://david-dm.org/auth0/node-jsonwebtoken)
 
@@ -10,7 +10,7 @@ This was developed against `draft-ietf-oauth-json-web-token-08`. It makes use of
 # Install
 
 ```bash
-$ npm install jsonwebtoken
+$ npm install sc-jsonwebtoken
 ```
 
 # Usage
@@ -53,7 +53,7 @@ Example
 
 ```js
 // sign with default (HMAC SHA256)
-var jwt = require('jsonwebtoken');
+var jwt = require('sc-jsonwebtoken');
 var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 //backdate a jwt 30 seconds
 var older_token = jwt.sign({ foo: 'bar', iat: Math.floor(Date.now() / 1000) - 30 }, 'shhhhh');
