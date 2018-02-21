@@ -19,7 +19,7 @@
     "url": "https://github.com/SocketCluster/sc-jsonwebtoken/issues"
   },
   "dependencies": {
-    "joi": "^6.10.1",
+    "joi": "^13.1.2",
     "jws": "^3.1.4",
     "lodash.once": "^4.0.0",
     "ms": "^2.0.0",
